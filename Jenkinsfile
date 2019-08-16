@@ -7,6 +7,7 @@ pipeline {
         notifyPipelineStart()
         notifyStageStart()
         echo "Build stage start"
+        sh "exit 1"
         sh "sleep 5"
       }
       post {
